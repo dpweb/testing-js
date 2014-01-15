@@ -1,0 +1,37 @@
+{
+  "name": "phantom-jasmine",
+  "description": "Phantom test runner for Jasmine",
+  "keywords": [
+    "testing",
+    "bdd",
+    "headless"
+  ],
+  "author": {
+    "name": "Joshua Carver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jcarver989/phantom-jasmine.git"
+  },
+  "main": "lib/run_jasmine_test.coffee",
+  "version": "0.1.0",
+  "bin": {
+    "phantom-jasmine": "./bin/phantom-jasmine"
+  },
+  "preferGlobal": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "readme": "Phantom-Jasmine\r\n=====================\r\n\r\nPhantom-Jasmine is a simple set of two scripts for running your Jasmine Tests via Phantom.js (http://www.phantomjs.org/).\r\nThe first script lib/console-runner.js is a plugin to Jasmine that outputs test results (with ansi color codes) via console.log (included with a script tag inside TestRunner.html).\r\nThe second script lib/run_jasmine_test.coffee takes an html file as it's first and only argument and then executes any Jasmine tests\r\nthat file loads. See below for more detail.\r\n\r\n\r\nInstallation\r\n-------------------\r\n\r\nAssuming you have PhantomJs setup and installed...\r\n\r\n    sudo npm install phantom-jasmine -g\r\n\r\n\r\nRunning Tests\r\n-------------------\r\n\r\n    phantom-jasmine examples/TestRunner.html\r\n\r\nOn some running OS X you might have to pass in the full url, ex:\r\n\r\n    phantom-jasmine file://localhost/Users/bob/phantom-jasmine/examples/TestRunner.html \r\n\r\n\r\nIf everything works you should see output like this in your terminal:\r\n\r\n    Util : should fail for the example\r\n    Error: Expected false to be truthy.\r\n\r\n    Finished\r\n    -----------------\r\n    3 specs, 1 failure in 0.024s.\r\n    \r\n\r\nTo run your own tests with Phantom-Jasmine just look at TestRunner.html and modify/copy the script tags accordingly.\r\n",
+  "readmeFilename": "readme.md",
+  "_id": "phantom-jasmine@0.1.0",
+  "dist": {
+    "shasum": "cba25c064042c56feeb4b3036ada68f7cb2c6a49"
+  },
+  "_resolved": "git://github.com/jcarver989/phantom-jasmine#c5ff6cea607658f5d5e2e4c6b664bd6650542c56",
+  "_from": "git://github.com/jcarver989/phantom-jasmine",
+  "_fromGithub": true
+}

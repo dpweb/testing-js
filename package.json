@@ -1,0 +1,9 @@
+{
+	"name":"so",
+	"version": "1.0.0",
+	"scripts": {
+		"test": "jasmine-node ./test",
+		"testdom": "phantomjs test/dom.js",
+		"jdom": "phantom-jasmine test/TestRunner.html"
+	}
+}
