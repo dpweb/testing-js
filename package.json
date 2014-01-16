@@ -4,6 +4,6 @@
 	"scripts": {
 		"test": "jasmine-node ./test",
 		"testdom": "phantomjs test/dom.js",
-		"jdom": "phantom-jasmine test/TestRunner.html"
+		"testhtml": "phantom-jasmine test/TestRunner.html"
 	}
 }
